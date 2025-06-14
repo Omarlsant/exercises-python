@@ -1,4 +1,6 @@
-print('''
+# Raw strings (r''') are used to prevent SyntaxWarnings from backslashes in ASCII art.
+
+print(r'''
 *******************************************************************************
           |                   |                  |                     |
  _________|________________.=""_;=.______________|_____________________|_______
@@ -21,11 +23,11 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 *******************************************************************************
 ''')
 print("Welcome to Treasure Island.")
-print("Your mission is to find the treasure.") 
+print("Your mission is to find the treasure.")
 
 first = input("Left or right?\nType Right/Left: ").lower()
 if first == "right":
-  print('''                      -     =    .--._
+  print(r'''                      -     =    .--._
                 - - ~_=  =~_- = - `.  `-.
               ==~_ = =_  ~ -   =  .-'    `.
             --=~_ - ~  == - =   .'      _..:._
@@ -42,12 +44,12 @@ if first == "right":
   ''')
   print("Sonic got the treasure before you, try again.")
 elif first == 'left':
-  print('''
+  print(r'''
    _                                                           
   | |                                                          
   | |_ _ __ ___  __ _ ___ _   _ _ __ ___ _ __ ___   __ _ _ __  
   | __| '__/ _ \/ _` / __| | | | '__/ _ \ '_ ` _ \ / _` | '_ \ 
-  | |_| | |  __/ (_| \__ \ |_| | | |  __/ | | | | | (_| | |_) |
+  | |_| | |  __/ (_| \__ \ |_| | | |  __/ | | | | | | (_| | |_) |
   \__|_|  \___|\__,_|___/\__,_|_|  \___|_| |_| |_|\__,_| .__/ 
                                                         | |    
                                                         |_| 
@@ -56,7 +58,7 @@ elif first == 'left':
 
   second = input("Your map shows that you need to get to Treasure Island, you can wait to board a ship or swim accross the sea, pick one.\nType Swim/Wait: ").lower()
   if second == "swim":
-    print('''
+    print(r'''
                     (`.
                     \ `.
                       )  `._..---._
@@ -69,7 +71,7 @@ elif first == 'left':
   elif second == "wait":
     print("Nice, you made it to the next level, you're pretty good at this!")
     print ("Welcome to:")
-    print ('''
+    print (r'''
      _                                     _     _                 _ 
     | |                                   (_)   | |               | |
     | |_ _ __ ___  __ _ ___ _   _ _ __ ___ _ ___| | __ _ _ __   __| |
@@ -82,7 +84,7 @@ elif first == 'left':
     if third == "dig":
       print("You've found the treasure, you win!")
     elif third == "cave":
-      print('''
+      print(r'''
       _                     
       | |                    
       | |__   ___  __ _ _ __ 
